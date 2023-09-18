@@ -16,6 +16,20 @@ var ReportDate = date.getFullYear() + ("0" + (date.getMonth() + 1)).slice(-2) + 
 const config: PlaywrightTestConfig = {
   testDir: './tests',
   testMatch: [
+     "login/login.test.ts", 
+    // "002usermanagement.test.ts",
+    // "003events.test.ts",
+    //  "company.test.ts",
+    // "employeeuser.test.ts",
+   // "usermanagement/alignwelluser.test.ts",
+   //"usermanagement/Contractor.test.ts",
+  //"usermanagement/healthcareprovider.test.ts",
+  // "broker.test.ts",
+  //  "usermanagement/alignuser/masteradmin.test.ts",
+  // "usermanagement/alignuser/standard.test.ts",
+  // "PortalTest/vendor.test.ts"
+
+
   ],
   
   fullyParallel: true,
@@ -45,8 +59,7 @@ const config: PlaywrightTestConfig = {
   use: {
     actionTimeout: 10 * 6000,
     navigationTimeout: 30 * 7000,
-    // baseURL: "https://qa-1.testingdxp.com/",
-    baseURL:"https://dev.alignhealthcare.com/",
+    baseURL:"https://dev.aligndentalcare.com/",
     launchOptions: {
       args: [
         // '--use-fake-device-for-media-stream',
